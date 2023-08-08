@@ -1,5 +1,5 @@
 * {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     margin: 0;
 }
 
@@ -17,18 +17,22 @@ div {
 
 .sidebar {
     grid-row: 1 / grid-end;
-    background-color: skyblue;
+    background-color: #2dd4bf;
+    color: white;
     display: grid;
     padding: 20px;
     gap: 30px;
     align-content: start;
+    justify-content: start;
 
 }
 
+
 .brewition-logo {
-    width: 180px;
+    width: 30px;
     height: auto;
     opacity: .5;
+    align-self: center;
     justify-self: center;
 }
 
@@ -36,7 +40,21 @@ ul li {
     list-style: none;
     font-size: larger;
     padding: 5px;
-    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+li img {
+    width: 30px;
+    height: auto;
+    opacity: 0.5;
+    margin-right: 10px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
 }
 
 ul li:hover {
@@ -52,6 +70,12 @@ ul li:hover {
     align-items: center;
     padding: 10px;
     gap: 10px;
+    
+    
+}
+
+.search-bar img {
+    width: 30px;
 }
 
 input {
@@ -62,6 +86,10 @@ input {
 .greeting {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.greeting img {
+    width: 50px;
 }
 
 .buttons {
@@ -75,23 +103,26 @@ input {
 button {
     padding: 10px;
     width: 100px;
-    background-color: skyblue;
+    background-color: #2dd4bf;
     border-radius: 15px;
 }
 
 .main-content {
-    background-color: rgb(209, 209, 209);
+    background-color: #ccfbf1;
     display: grid;
     grid-template-columns: minmax(200px, 1fr) minmax(150px, 300px);
     grid-template-rows: 30px 300px 30px 300px;
     gap: 15px;
     padding: 20px;
     overflow: auto;
+    box-shadow: inset 0 3px 3px lightgray;
+    
+
 }
 
 .main-content .your-projects {
     grid-row: 2 / 5;
-    background-color: rgb(209, 209, 209);
+    background-color: #ccfbf1;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
@@ -104,7 +135,7 @@ button {
     height: 300px;
     box-shadow: 3px 3px 3px grey;
     border-radius: 7px;
-    border-left: 10px solid salmon;
+    border-left: 15px solid #115e59;
 }
 
 .main-content .announcements {
