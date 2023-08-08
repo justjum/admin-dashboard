@@ -1,0 +1,52 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div {
+    
+}
+
+.container {
+    height: 97vh;
+    display: grid;
+    grid-template-columns: minmax(150px, 250px) 1fr;
+    grid-template-rows: 150px 1fr;
+}
+
+.sidebar {
+    grid-row: 1 / -1;
+    background-color: steelblue;
+}
+
+.header {
+    height: 150px;
+    background-color:pink;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.main-content {
+    background-color: orange;
+    display: grid;
+    grid-template-columns: 1fr minmax(200px, 300px);
+    grid-template-rows: 30px 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.main-content .your-projects {
+     grid-row: 2 / 4;
+     background-color: aqua;
+}
+
+.main-content .announcements {
+    grid-row: 2 / 3;
+}
+
+.main-content .trending {
+    grid-row: 3 / 4;
+}
+
+.main-content div {
+    background-color: white;
+}
