@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -27,17 +30,21 @@
         </div>
         <div class="header">
             <div class="search-bar">
-                <form action="post">
-                    <img src="./Images/magnify.svg" alt="magnifier">
+                <img src="./Images/magnify.svg" alt="magnifier">
+                <form action="post">                  
                     <input type="text">
                 </form>
             </div>
-            <div class="login-details"></div>           
+            <div class="login-details">
+                <img src="./Images/face-man-profile.svg" alt="user-icon-small">
+                <p>Jum</p>
+                <a href="">Logout</a>
+            </div>           
             <div class="greeting">
                 <img src="./Images/face-man-profile.svg" alt="user-icon">
-                <div>
+                <div class="greeting-text">
                     <p>Hi there,</p>
-                    <h2>Mr Jum</h2>
+                    <h2>Mr Jum (@justjum)</h2>
                 </div>
             </div>
             <div class="buttons">
@@ -50,16 +57,72 @@
             <h2>Your Projects</h2>
             <h2>Announcements</h2>
             <div class="your-projects">
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
+                    <div class="card">
+                        <h3>A Title, Of Sorts</h3>
+                        <p>Aliquet vel feugiat sit amet, posuere a dolor. Nullam in purus lacus. In enim ligula, pharetra non erat dictum, tristique semper arcu.</p>
+                        <div class="card-icons">
+                            <img src="./Images/star-outline.svg" alt="star card-icons"><img src="./Images/eye-outline.svg" alt="inspect card-icons"><img src="./Images/share-variant-outline.svg" alt="share icon">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>Another Title</h3>
+                        <p>Vulputate erat non, consectetur arcu. Curabitur lectus enim, mattis ac vestibulum eget, ornare nec velit. Praesent dui quam, eleifend quis elit sit amet.</p>
+                        <div class="card-icons">
+                            <img src="./Images/star-outline.svg" alt="star card-icons"><img src="./Images/eye-outline.svg" alt="inspect card-icons"><img src="./Images/share-variant-outline.svg" alt="share icon">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>Of Course</h3>
+                        <p>Scelerisque eu risus tincidunt, volutpat finibus sapien. Donec dui nulla, interdum ac aliquam quis, condimentum ut magna.  </p>
+                        <div class="card-icons">
+                            <img src="./Images/star-outline.svg" alt="star card-icons"><img src="./Images/eye-outline.svg" alt="inspect card-icons"><img src="./Images/share-variant-outline.svg" alt="share icon">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>One More</h3>
+                        <p>Nulla ut quam mauris. Fusce ac massa ut felis mollis posuere. Mauris a odio a dolor molestie fermentum eget et orci.</p>
+                        <div class="card-icons">
+                            <img src="./Images/star-outline.svg" alt="star card-icons"><img src="./Images/eye-outline.svg" alt="inspect card-icons"><img src="./Images/share-variant-outline.svg" alt="share icon">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>Play Cards</h3>
+                        <p>Nunc orci sem, scelerisque eu risus tincidunt, volutpat finibus sapien. Donec dui nulla, interdum ac aliquam quis. </p>
+                        <div class="card-icons">
+                            <img src="./Images/star-outline.svg" alt="star card-icons"><img src="./Images/eye-outline.svg" alt="inspect card-icons"><img src="./Images/share-variant-outline.svg" alt="share icon">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>Like Your Last</h3>
+                        <p> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed elementum nec augue quis mollis. </p>
+                        <div class="card-icons">
+                            <img src="./Images/star-outline.svg" alt="star card-icons"><img src="./Images/eye-outline.svg" alt="inspect card-icons"><img src="./Images/share-variant-outline.svg" alt="share icon">
+                        </div>
+                    </div>
             </div>
-            <div class="announcements"></div>
+            <div class="announcements">
+                <div class="announcement">
+                    <h4>09.08.23</h4>
+                    <p>Just about finished Intermediate HTML</p>
+                </div>
+                <div class="announcement">
+                    <h4>08.08.23</h4>
+                    <p>Rock n rollin.</p>
+                </div>
+                <div class="announcement">
+                    <h4>07.08.23</h4>
+                    <p>I read the news today, oh boy.</p>
+                </div>
+            </div>
             <h2>Trending</h2>
-            <div class="trending"></div>
+            <div class="trending">
+                <h4></h4>
+                <p></p>
+                <h4></h4>
+                <p></p>
+                <h4></h4>
+                <p></p>
+            </div>
         </div>
     </div>
 </body>

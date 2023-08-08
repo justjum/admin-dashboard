@@ -1,11 +1,12 @@
 * {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Montserrat', Courier, monospace;
     margin: 0;
 }
 
 div {
     
 }
+
 
 .container {
     height: 100vh;
@@ -60,12 +61,13 @@ ul {
 ul li:hover {
     text-decoration: underline;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .header {
     height: 150px;
     display: grid;
-    grid-template-rows: 50px 1fr;
+    grid-template-rows: 40px 1fr;
     grid-template-columns: 3fr 2fr;
     align-items: center;
     padding: 10px;
@@ -74,22 +76,53 @@ ul li:hover {
     
 }
 
+.search-bar {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    justify-content: center;
+    align-content: center;
+}
+
 .search-bar img {
     width: 30px;
 }
 
 input {
     border-radius: 5px;
-    width: auto;
+    width: 80%;
 }
 
+.login-details {
+    display: grid;
+    grid-template-columns: 1fr 50px 50px 100px;
+    justify-content: center;
+    align-content: center;
+}
+
+.login-details img {
+    width: 40px;
+    grid-column: 2;
+}
+
+a {
+    text-decoration: none;
+    padding: 0;
+    margin: 10px;
+    color: #2dd4bf;
+}
 .greeting {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .greeting img {
-    width: 50px;
+    width: 70px;
+    justify-self: center;
+}
+
+.greeting-text {
+    width: 330px;
+
 }
 
 .buttons {
@@ -101,10 +134,14 @@ input {
 }
 
 button {
-    padding: 10px;
-    width: 100px;
+    padding: 7px;
+    width: clamp(60px, 90%, 200px);
     background-color: #2dd4bf;
     border-radius: 15px;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 .main-content {
@@ -127,15 +164,42 @@ button {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
     align-content: space-between;
-
+    
 }
 
 .your-projects .card {
-    width: clamp(200px, 90%, 500px);
-    height: 300px;
+    width: clamp(160px, 70%, 400px);
+    height: 280px;
     box-shadow: 3px 3px 3px grey;
-    border-radius: 7px;
+    border-radius: 12px;
     border-left: 15px solid #115e59;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: 35px 1fr 35px;
+    align-content: start;
+    justify-content: center;
+}
+
+h3 {
+    font-size: 1em;
+}
+
+.card-icons {
+    justify-self: end;
+    align-self: center;
+}
+
+.card img {
+    width: 30px;
+    margin: 2px;
+}
+
+.card img:hover {
+    cursor: pointer;
+}
+
+h3 {
+    margin: 10px;
 }
 
 .main-content .announcements {
@@ -143,6 +207,17 @@ button {
     border-radius: 10px;
     box-shadow: 3px 3px 3px grey;
     max-height: 300px;
+    padding: 20px;
+}
+
+.announcements h3, p {
+    margin: 10px;
+    
+}
+
+.announcement {
+    border-bottom: 1px solid black;
+    margin: 10px;
 }
 
 .main-content .trending {
