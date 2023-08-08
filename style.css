@@ -1,5 +1,6 @@
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
 }
 
 div {
@@ -7,44 +8,117 @@ div {
 }
 
 .container {
-    height: 97vh;
+    height: 100vh;
     display: grid;
-    grid-template-columns: minmax(150px, 250px) 1fr;
+    grid-template-columns: minmax(200px, 250px) 1fr;
     grid-template-rows: 150px 1fr;
+    
 }
 
 .sidebar {
-    grid-row: 1 / -1;
-    background-color: steelblue;
+    grid-row: 1 / grid-end;
+    background-color: skyblue;
+    display: grid;
+    padding: 20px;
+    gap: 30px;
+    align-content: start;
+
+}
+
+.brewition-logo {
+    width: 180px;
+    height: auto;
+    opacity: .5;
+    justify-self: center;
+}
+
+ul li {
+    list-style: none;
+    font-size: larger;
+    padding: 5px;
+    
+}
+
+ul li:hover {
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 .header {
     height: 150px;
-    background-color:pink;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 50px 1fr;
+    grid-template-columns: 3fr 2fr;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+input {
+    border-radius: 5px;
+    width: auto;
+}
+
+.greeting {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: center;
+    justify-items: center;
+    
+}
+
+button {
+    padding: 10px;
+    width: 100px;
+    background-color: skyblue;
+    border-radius: 15px;
 }
 
 .main-content {
-    background-color: orange;
+    background-color: rgb(209, 209, 209);
     display: grid;
-    grid-template-columns: 1fr minmax(200px, 300px);
-    grid-template-rows: 30px 1fr 1fr;
-    gap: 20px;
+    grid-template-columns: minmax(200px, 1fr) minmax(150px, 300px);
+    grid-template-rows: 30px 300px 30px 300px;
+    gap: 15px;
     padding: 20px;
+    overflow: auto;
 }
 
 .main-content .your-projects {
-     grid-row: 2 / 4;
-     background-color: aqua;
+    grid-row: 2 / 5;
+    background-color: rgb(209, 209, 209);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    align-content: space-between;
+
+}
+
+.your-projects .card {
+    width: clamp(200px, 90%, 500px);
+    height: 300px;
+    box-shadow: 3px 3px 3px grey;
+    border-radius: 7px;
+    border-left: 10px solid salmon;
 }
 
 .main-content .announcements {
-    grid-row: 2 / 3;
+    grid-row: 2;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px grey;
+    max-height: 300px;
 }
 
 .main-content .trending {
-    grid-row: 3 / 4;
+    grid-row: 4;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px grey;
+    max-height: 300px;
 }
 
 .main-content div {
